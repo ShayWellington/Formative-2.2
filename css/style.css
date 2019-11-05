@@ -1,0 +1,40 @@
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 15px;
+}
+
+.filter {
+  margin: 30px 10%;
+}
+
+.sort {
+  margin: 30px 10%;
+}
+
+.btn-collapse {
+  color: #62929E;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  outline: none;
+  font-size: 22px;
+}
+
+.filter-content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
