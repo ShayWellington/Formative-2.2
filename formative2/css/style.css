@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.tester{
+  margin: 0;
+  width: 100%;
+}
+
+.a{
+  width: 30%;
+  float: left;
+}
+
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 15px;
+}
+
+.filter {
+  margin: 30px 10%;
+}
+
+.sort {
+  margin: 30px 10%;
+}
+
+.btn-collapse {
+  color: #62929E;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  outline: none;
+  font-size: 22px;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #E6AF2E;
+  border: none;
+  border-radius: 5px;
+}
+
+.filter-content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+.row {
+  margin: 0px 10%;
+}
+
+.card {
+  margin: 15px 0;
+}
+
+.about {
+  margin: 40px 11%;
+}
+
+.retailers {
+  margin: 40px 11%;
+}
