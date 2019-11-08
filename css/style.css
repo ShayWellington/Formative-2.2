@@ -1,3 +1,26 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.tester{
+  margin: 0;
+  width: 100%;
+}
+
+.a{
+  width: 30%;
+  float: left;
+}
+
+.a.clear {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
 html, body {
   position: relative;
   height: 100%;
@@ -33,8 +56,90 @@ h1 {
   font-size: 22px;
 }
 
+.cardBtn {
+  color: #62929E;
+  background-color: white;
+  border: 2px solid #62929E;
+  border-radius: 5px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.cardBtn:hover {
+  color: white;
+  background-color: #62929E;
+  border: 2px solid #62929E;
+}
+
 .filter-content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
+}
+
+.row {
+  margin: 0px 10%;
+}
+
+.card {
+  margin: 15px 0;
+  margin-left: 2.33%
+}
+
+.about {
+  margin: 40px 11%;
+}
+
+.retailers {
+  margin: 40px 11%;
+}
+
+.myModal{
+  height: 100vh;
+  width : 70%;
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+  justify-content: center;
+}
+
+.closeBar{
+  font-size: 25px;
+  color : white;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  .card {
+    margin: 15px;
+    margin-left: 2.5%;
+  }
+
+  .a{
+    width: 45%;
+    float: left;
+  }
+
+  .a.clear {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .card {
+    margin: 15px 5%;
+  }
+
+  .a{
+    width: 90%;
+  }
+
 }
