@@ -53,29 +53,55 @@
       <div class="filter">
         <a class="btn btn-collapse" href="#"> Filter <i class="fas fa-chevron-down"></i> </a>
           <div class="filter-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <form action="index.html" method="post">
+              <input type="radio" name="color" value="purple"> Purple<br>
+              <input type="radio" name="color" value="yellow"> Yellow<br>
+              <input type="radio" name="color" value="green"> Green<br>
+              <input type="radio" name="color" value="black"> Black<br>
+              <input type="radio" name="color" value="white"> White<br>
+              <input type="radio" name="color" value="blue"> Blue<br>
+              <input type="radio" name="color" value="red"> Red<br>
+              <input type="radio" name="color" value="gold"> Gold<br>
+              <input type="radio" name="color" value="silver"> Silver<br>
+              <input type="radio" name="color" value="other"> Other<br>
+            </form>
+            <form action="index.html" method="post">
+              <input type="radio" name="brand" value="apple"> Apple<br>
+              <input type="radio" name="brand" value="samsung"> Samsung<br>
+              <input type="radio" name="brand" value="huawei"> Huawei<br>
+              <input type="radio" name="brand" value="google"> Google<br>
+            </form>
+            <form action="index.html" method="post">
+              <input type="radio" name="os" value="ios"> IOS<br>
+              <input type="radio" name="os" value="android"> Android<br>
+            </form>
           </div>
       </div>
 
       <div class="sort">
-        <a class="btn btn-collapse" href="#"> Sort <i class="fas fa-chevron-down"></i> </a>
-          <div class="sort-content">
-          </div>
+        <button class="btn btn-collapse dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sort
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#" id="sortAlphabet" >Alphabetical</a>
+          <a class="dropdown-item" href="#" id="SortPriceLow" >Price Low to High</a>
+          <a class="dropdown-item" href="#" id="sortPriceHigh" >Price High to Low</a>
+        </div>
       </div>
 
       <!-- Phones -->
       <div id="phones" class="tester" > </div>
 
       <!-- modal -->
-      <!-- <div class="myModal col-12 col-sm-10 col-md-10 col-lg-10 bg-secondary">
+      <div class="myModal col-12 col-sm-10 col-md-10 col-lg-10 bg-secondary">
         <div class="closeBar"> &times; </div>
 
         <div id ="modalContent" class="">
         </div>
 
-      </div> -->
+      </div>
 
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -93,7 +119,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
 
 
