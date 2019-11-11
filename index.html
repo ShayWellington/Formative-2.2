@@ -16,10 +16,6 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Products <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">About</a>
-          <a class="nav-item nav-link" href="#">Retailers</a>
         </div>
       </div>
     </nav>
@@ -83,39 +79,63 @@
           Sort
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#" id="sortAlphabet" >Alphabetical</a>
-          <a class="dropdown-item" href="#" id="SortPriceLow" >Price Low to High</a>
-          <a class="dropdown-item" href="#" id="sortPriceHigh" >Price High to Low</a>
+          <button class="dropdown-item" type="button" id="sortAZ" >A-Z</button>
+          <button class="dropdown-item" type="button" id="sortZA" >Z-A</button>
+          <button class="dropdown-item" type="button" id="sortPriceLow" >Price Low to High</button>
+          <button class="dropdown-item" type="button" id="sortPriceHigh" >Price High to Low</button>
         </div>
       </div>
 
+
       <!-- Phones -->
-      <div id="phones" class="tester" > </div>
+      <div id="phones" class="tester phone-modal" > </div>
+
+
 
       <!-- modal -->
       <div class="myModal col-12 col-sm-10 col-md-10 col-lg-10 bg-secondary">
         <div class="closeBar"> &times; </div>
 
-        <div id ="modalContent" class="">
+        <div id ="phoneInfoModal" class="">
         </div>
 
       </div>
 
-      <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+      <!-- Modal Layout -->
+
+      <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Apple Iphone XS Max</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                ...
+                <div class="row modal-data">
+                    <div class="col-md-6">
+                        <h3>Price</h3>
+                        <p class="modal-para"> $2049 </p>
+                        <h3>Description</h3>
+                        <p class="modal-para"> Welcome to the biggest screen on an iPhone. 6.5-inch Super Retina display — the largest display ever on an iPhone. 1 Advanced Face ID. The smartest, most powerful chip in a smartphone. And a breakthrough dual-camera system. iPhone XS Max is everything you love about iPhone and more.</p>
+                        <h3>Colours</h3>
+                        <p class="modal-para"> Gold, Silver, Black </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="r-align">System</h3>
+                        <p class="modal-para"> IOS </p>
+                        <h3 class="r-align">Camera</h3>
+                        <p class="modal-para"> Duel 12- megapixel wide and Telephoto cameras </p>
+                        <h3 class="r-align">Screen</h3>
+                        <p class="modal-para"> 6.5" Super Retina HD display </p>
+                    </div>
+                </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
               </div>
             </div>
           </div>
