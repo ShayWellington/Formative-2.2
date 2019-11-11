@@ -16,6 +16,8 @@
 .a{
   width: 30%;
   float: left;
+  border-radius: 5px;
+  border: solid white 0px;
 }
 
 .a.clear {
@@ -44,6 +46,10 @@ h1 {
 
 .filter {
   margin: 30px 10%;
+}
+
+.carousel-width {
+  padding: 20px 30%;
 }
 
 /* .phones-btn {
