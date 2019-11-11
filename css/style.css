@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
-.tester{
+/* .tester{
   margin: 0;
   width: 100%;
+} */
+
+.navbar-collapse {
+  flex-grow: 0;
 }
 
 .a{
@@ -42,7 +46,20 @@ h1 {
   margin: 30px 10%;
 }
 
-.sort {
+/* .phones-btn {
+  position: relative;
+  font-size: 14px;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 14px 40px;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #62929E;
+} */
+
+/* .sort {
   margin: 30px 10%;
 }
 
@@ -54,7 +71,7 @@ h1 {
   text-align: left;
   outline: none;
   font-size: 22px;
-}
+} */
 
 .cardBtn {
   color: #62929E;
@@ -71,11 +88,11 @@ h1 {
   border: 2px solid #62929E;
 }
 
-.filter-content {
+/* .filter-content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-}
+} */
 
 .row {
   margin: 0px 10%;
@@ -84,14 +101,6 @@ h1 {
 .card {
   margin: 15px 0;
   margin-left: 2.33%
-}
-
-.about {
-  margin: 40px 11%;
-}
-
-.retailers {
-  margin: 40px 11%;
 }
 
 .myModal{

@@ -1,22 +1,5 @@
 console.log('Phone Comparison Site');
 
-// Show/Hide Filter ----------------------------------------------------------------
-
-var coll = document.getElementsByClassName("btn-collapse");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-
 // Object Array ----------------------------------------------------------------
 
 var phones = [
@@ -254,8 +237,8 @@ var phones = [
 
 // Display Cards ----------------------------------------------------------------
 
-// All phones
-// var id = 101;
+allPhones();
+
 function allPhones(){
   document.getElementById('phones').innerHTML = " ";
 for(var i = 0; i < phones.length; i++) {
@@ -264,11 +247,27 @@ for(var i = 0; i < phones.length; i++) {
   +      '<img src="' + phones[i].image + '" class="card-img-top" alt="Phone">'
   +          '<div class="card-body">'
   +            '<h5 class="card-title">' + phones[i].name + '</h5>'
-  +            '<p class="card-text">' + phones[i].price + '</p>'
-  +            '<button type="button" class="btn cardBtn btn-primary" data-toggle="modal" data-target="#myModal">View More</button>'
+  +            '<p class="card-text"> $' + phones[i].price + '.00</p>'
+  // +            '<button type="button" class="btn cardBtn btn-primary" data-toggle="modal" data-target="#myModal">View More</button>'
   +      '</div>' ;
 }
 };
+
+// Filter Function ----------------------------------------------------------------
+
+// Black Filter
+
+document.getElementById('black').addEventListener('click', function(){
+  document.getElementById('black').scrollIntoView();
+  document.getElementById('phones').innerHTML = '' // container clear
+
+  var propId= 101;
+  var i;
+  for (var i = 0; i < phones.length; i++) {
+    phones[i]
+  }
+})
+
 
 // Sort Function ----------------------------------------------------------------
 
@@ -351,7 +350,7 @@ function writePhoneInfo(){
             '<h3>Description</h3>' +
             '<p class="modal-para">' + phones[i].description +
             '<h3>Colours</h3>' +
-            '<p class="modal-para">' + phones[i].colours + 
+            '<p class="modal-para">' + phones[i].colours +
         '</div>' +
         // Specifications --- System, Camera, screen
         '<div class="col-md-6">' +

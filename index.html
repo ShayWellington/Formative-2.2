@@ -11,18 +11,66 @@
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class="navbar-brand" href="#">One Connect</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav mr-auto">
+
+          <!-- Dropdown menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle myNav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Filter Colour
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a id="black" class="dropdown-item nav-header">Black</a>
+              <a id="white" class="dropdown-item nav-header">White</a>
+              <a id="silver" class="dropdown-item nav-header">Silver</a>
+              <a id="gold" class="dropdown-item nav-header">Gold</a>
+            </div>
+          </li>
+          </ul>
         </div>
-      </div>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle myNav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Filter Brand
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a id="apple" class="dropdown-item nav-header">Apple</a>
+              <a id="samsung" class="dropdown-item nav-header">Samsung</a>
+              <a id="huawei" class="dropdown-item nav-header">Huawei</a>
+              <a id="google" class="dropdown-item nav-header">Google</a>
+            </div>
+          </li>
+          </ul>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle myNav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sort
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a id="sortAZ" class="dropdown-item nav-header">A-Z</a>
+              <a id="sortZA" class="dropdown-item nav-header">Z-A</a>
+              <a id="sortPriceLow" class="dropdown-item nav-header">Price Low to High</a>
+              <a id="sortPriceHigh" class="dropdown-item nav-header">Price High to Low</a>
+            </div>
+          </li>
+          </ul>
+        </div>
     </nav>
 
-    <div class="heading">
-          <h1 class="display-4 text-center"> Mobile Phones </h1>
-    </div>
+
+    <!-- <div class="heading">
+          <h1 class=" title text-center"> One Connect </h1>
+    </div> -->
+
 
     <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -46,46 +94,7 @@
       </a>
     </div>
 
-      <div class="filter">
-        <a class="btn btn-collapse" href="#"> Filter <i class="fas fa-chevron-down"></i> </a>
-          <div class="filter-content">
-            <form action="index.html" method="post">
-              <input type="radio" name="color" value="purple"> Purple<br>
-              <input type="radio" name="color" value="yellow"> Yellow<br>
-              <input type="radio" name="color" value="green"> Green<br>
-              <input type="radio" name="color" value="black"> Black<br>
-              <input type="radio" name="color" value="white"> White<br>
-              <input type="radio" name="color" value="blue"> Blue<br>
-              <input type="radio" name="color" value="red"> Red<br>
-              <input type="radio" name="color" value="gold"> Gold<br>
-              <input type="radio" name="color" value="silver"> Silver<br>
-              <input type="radio" name="color" value="other"> Other<br>
-            </form>
-            <form action="index.html" method="post">
-              <input type="radio" name="brand" value="apple"> Apple<br>
-              <input type="radio" name="brand" value="samsung"> Samsung<br>
-              <input type="radio" name="brand" value="huawei"> Huawei<br>
-              <input type="radio" name="brand" value="google"> Google<br>
-            </form>
-            <form action="index.html" method="post">
-              <input type="radio" name="os" value="ios"> IOS<br>
-              <input type="radio" name="os" value="android"> Android<br>
-            </form>
-          </div>
-      </div>
-
-      <div class="sort">
-        <button class="btn btn-collapse dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Sort
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <button class="dropdown-item" type="button" id="sortAZ" >A-Z</button>
-          <button class="dropdown-item" type="button" id="sortZA" >Z-A</button>
-          <button class="dropdown-item" type="button" id="sortPriceLow" >Price Low to High</button>
-          <button class="dropdown-item" type="button" id="sortPriceHigh" >Price High to Low</button>
-        </div>
-      </div>
-
+    <!-- <button id="products" type="button" class="phones-btn" onClick="document.getElementById('products').scrollIntoView();">View all products</button> -->
 
       <!-- Phones -->
       <div id="phones" class="tester phone-modal" > </div>
